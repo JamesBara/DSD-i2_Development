@@ -1,0 +1,9 @@
+#DSD-i2
+# DSD-i2 stm upload tool
+tools.dsdi2_stm_upload.cmd=dsdi2_stm_upload_tool
+tools.dsdi2_stm_upload.cmd.windows=dsdi2_stm_upload_tool.exe
+tools.dsdi2_stm_upload.path={runtime.tools.STM32Tools.path}/win
+tools.dsdi2_stm_upload.upload.params.verbose=
+tools.dsdi2_stm_upload.upload.params.quiet=
+tools.dsdi2_stm_upload.upload.pattern="{path}/{cmd}" "{build.path}/{build.project_name}.bin" "{serial.port.file}"
+#DSD-i2-end

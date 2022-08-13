@@ -1,0 +1,10 @@
+# DSD-i2
+# DSD-i2 upload tool
+tools.dsd_esp_upload.cmd=dsdi2_esp_upload_tool
+tools.dsd_esp_upload.cmd.windows=dsdi2_esp_upload_tool.exe
+tools.dsd_esp_upload.path={runtime.tools.esptool_py.path}
+tools.dsd_esp_upload.upload.protocol=esp32
+tools.dsd_esp_upload.upload.params.verbose=
+tools.dsd_esp_upload.upload.params.quiet=
+tools.dsd_esp_upload.upload.pattern="{path}/{cmd}" "{runtime.tools.esptool_py.path}/esptool.exe" "{serial.port}" "{runtime.platform.path}/tools/partitions/boot_app0.bin" "{build.bootloader_addr}" "{build.path}/{build.project_name}.bootloader.bin" "{build.path}/{build.project_name}.bin" "{build.path}/{build.project_name}.partitions.bin"
+#DSD-i2-end

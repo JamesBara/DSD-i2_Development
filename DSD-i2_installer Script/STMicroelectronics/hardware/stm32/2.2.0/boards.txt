@@ -1,0 +1,78 @@
+#DSD-i2
+
+dsdi2_stm.name=DSD-i2
+
+dsdi2_stm.vid.0= 0x0483
+dsdi2_stm.pid.0= 0x5740
+
+dsdi2_stm.build.core=arduino
+#Change this to ARDUINO_L452RE in the final build
+dsdi2_stm.build.board=ARDUINO_NUCLEO_L452RE
+dsdi2_stm.build.variant_h=variant_{build.board}.h
+dsdi2_stm.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial} {build.bootloader_flags}
+
+dsdi2_stm.menu.pnum.dsdi2_stm=DSD-i2
+dsdi2_stm.menu.pnum.dsdi2_stm.node=NODE_L452RE
+dsdi2_stm.menu.pnum.dsdi2_stm.upload.maximum_size=524288
+dsdi2_stm.menu.pnum.dsdi2_stm.upload.maximum_data_size=163840
+dsdi2_stm.menu.pnum.dsdi2_stm.build.mcu=cortex-m4
+dsdi2_stm.menu.pnum.dsdi2_stm.build.flags.fp=-mfpu=fpv4-sp-d16 -mfloat-abi=hard
+dsdi2_stm.menu.pnum.dsdi2_stm.build.board=dsdi2_stm_i2
+dsdi2_stm.menu.pnum.dsdi2_stm.build.series=STM32L4xx
+dsdi2_stm.menu.pnum.dsdi2_stm.build.product_line=STM32L452xx
+dsdi2_stm.menu.pnum.dsdi2_stm.build.variant=STM32L4xx/L452R(C-E)(I-T-Y)_L462RE(I-T-Y)
+dsdi2_stm.menu.pnum.dsdi2_stm.build.cmsis_lib_gcc=arm_cortexM4lf_math
+
+dsdi2_stm.menu.upload_method.dsdi2_stmUploadMethod=DSD-i2 STM upload tool
+dsdi2_stm.menu.upload_method.dsdi2_stmUploadMethod.upload.tool=dsdi2_stm_upload
+dsdi2_stm.menu.upload_method.dsdi2_stmUploadMethod.upload.protocol=dsdi2_stm
+dsdi2_stm.menu.upload_method.dsdi2_stmUploadMethod.build.flash_offset=0x10000
+dsdi2_stm.menu.upload_method.dsdi2_stmUploadMethod.build.bootloader_flags=-DBL_LEGACY_LEAF -DVECT_TAB_OFFSET={build.flash_offset}
+
+################################################################################
+# Serialx activation
+dsdi2_stm.menu.xserial.generic=Enabled (generic 'Serial')
+dsdi2_stm.menu.xserial.none=Enabled (no generic 'Serial')
+dsdi2_stm.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
+
+# USB connectivity
+dsdi2_stm.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
+dsdi2_stm.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
+dsdi2_stm.menu.usb.CDC=CDC (no generic 'Serial')
+dsdi2_stm.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
+
+# Optimizations
+dsdi2_stm.menu.opt.osstd=Smallest (-Os default)
+dsdi2_stm.menu.opt.oslto=Smallest (-Os) with LTO
+dsdi2_stm.menu.opt.oslto.build.flags.optimize=-Os -flto
+dsdi2_stm.menu.opt.o1std=Fast (-O1)
+dsdi2_stm.menu.opt.o1std.build.flags.optimize=-O1
+dsdi2_stm.menu.opt.o1lto=Fast (-O1) with LTO
+dsdi2_stm.menu.opt.o1lto.build.flags.optimize=-O1 -flto
+dsdi2_stm.menu.opt.o2std=Faster (-O2)
+dsdi2_stm.menu.opt.o2std.build.flags.optimize=-O2
+dsdi2_stm.menu.opt.o2lto=Faster (-O2) with LTO
+dsdi2_stm.menu.opt.o2lto.build.flags.optimize=-O2 -flto
+dsdi2_stm.menu.opt.o3std=Fastest (-O3)
+dsdi2_stm.menu.opt.o3std.build.flags.optimize=-O3
+dsdi2_stm.menu.opt.o3lto=Fastest (-O3) with LTO
+dsdi2_stm.menu.opt.o3lto.build.flags.optimize=-O3 -flto
+dsdi2_stm.menu.opt.ogstd=Debug (-Og)
+dsdi2_stm.menu.opt.ogstd.build.flags.optimize=-Og
+
+# Debug information
+dsdi2_stm.menu.dbg.none=None
+dsdi2_stm.menu.dbg.enable=Enabled (-g)
+dsdi2_stm.menu.dbg.enable.build.flags.debug=-g
+
+# C Runtime Library
+dsdi2_stm.menu.rtlib.nano=Newlib Nano (default)
+dsdi2_stm.menu.rtlib.nanofp=Newlib Nano + Float Printf
+dsdi2_stm.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
+dsdi2_stm.menu.rtlib.nanofs=Newlib Nano + Float Scanf
+dsdi2_stm.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
+dsdi2_stm.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
+dsdi2_stm.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
+dsdi2_stm.menu.rtlib.full=Newlib Standard
+dsdi2_stm.menu.rtlib.full.build.flags.ldspecs=
+#DSD-i2-end
