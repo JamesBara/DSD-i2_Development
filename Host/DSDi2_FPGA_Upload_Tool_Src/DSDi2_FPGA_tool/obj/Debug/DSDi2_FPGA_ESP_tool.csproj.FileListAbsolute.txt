@@ -1,0 +1,10 @@
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\bin\Debug\DSDi2_FPGA_tool.exe.config
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\bin\Debug\DSDi2_FPGA_tool.exe
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\bin\Debug\DSDi2_FPGA_tool.pdb
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\obj\Debug\DSDi2_FPGA_ESP_tool.csproj.AssemblyReference.cache
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\obj\Debug\DSDi2_FPGA_tool.DSDi2_FPGA_toolForm.resources
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\obj\Debug\DSDi2_FPGA_tool.Properties.Resources.resources
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\obj\Debug\DSDi2_FPGA_ESP_tool.csproj.GenerateResource.cache
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\obj\Debug\DSDi2_FPGA_ESP_tool.csproj.CoreCompileInputs.cache
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\obj\Debug\DSDi2_FPGA_tool.exe
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSDi2_FPGA_tool\obj\Debug\DSDi2_FPGA_tool.pdb
