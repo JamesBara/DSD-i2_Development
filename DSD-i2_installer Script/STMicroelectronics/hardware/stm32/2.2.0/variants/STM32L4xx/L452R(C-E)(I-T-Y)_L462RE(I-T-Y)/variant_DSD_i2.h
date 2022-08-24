@@ -96,42 +96,38 @@
 #define NUM_DIGITAL_PINS        52
 #define NUM_ANALOG_INPUTS       16
 
-#define LED_BUSY             PB4
-#define LED_ERROR               PB5
-#define LED_OK               PB8
+//onboard LED definitions
+#define LED_OK		PB3
+#define LED_BUSY		PB4
+#define LED_ERROR		PB5
+//SPI2 definitions
+#define MEM_HOLD		PB11
+#define SPI2_SS		PB12 
+#define SPI2_SCK		PB13
+#define SPI2_MISO		PB14
+#define SPI2_MOSI		PB15
+//SPI3 definitions
+#define SPI3_SS		PA15
+#define SPI3_SCK		PC10
+#define SPI3_MOSI		PC12
+#define SPI3_MISO		PC13
+#define SD_DET		PD2
+//USART1 definitions
+#define USART1_TX		PB6
+#define USART1_RX		PB7
+//USART2 definitions
+#define USART2_TX		PA2
+#define USART2_RX		PA3
+//ESP definitions
+#define ESP_EN		 PC0
+#define ESP_IO9		PC1
+//FPGA definitions
+#define DATA0		PA0
+#define DCLK		PA1
+#define nSTATUS		PA4
+#define CONF_DONE		PC2
+#define nCONFIG		PC3
 
-// On-board LED pin number
-#ifndef LED_BUILTIN
-  #define LED_BUILTIN           PNUM_NOT_DEFINED
-#endif
-
-// On-board user button
-#ifndef USER_BTN
-  #define USER_BTN              PNUM_NOT_DEFINED
-#endif
-
-// SPI definitions
-#ifndef PIN_SPI_SS
-  #define PIN_SPI_SS            PA4
-#endif
-#ifndef PIN_SPI_SS1
-  #define PIN_SPI_SS1           PA15
-#endif
-#ifndef PIN_SPI_SS2
-  #define PIN_SPI_SS2           PB0
-#endif
-#ifndef PIN_SPI_SS3
-  #define PIN_SPI_SS3           PNUM_NOT_DEFINED
-#endif
-#ifndef PIN_SPI_MOSI
-  #define PIN_SPI_MOSI          PA7
-#endif
-#ifndef PIN_SPI_MISO
-  #define PIN_SPI_MISO          PA6
-#endif
-#ifndef PIN_SPI_SCK
-  #define PIN_SPI_SCK           PA1
-#endif
 
 // I2C definitions
 #ifndef PIN_WIRE_SDA
@@ -150,30 +146,13 @@
   #define TIMER_SERVO           TIM16
 #endif
 
-// UART Definitions
-#ifndef SERIAL_UART_INSTANCE
-  #define SERIAL_UART_INSTANCE  4
-#endif
 
-// Default pin used for generic 'Serial' instance
-// Mandatory for Firmata
-#ifndef PIN_SERIAL_RX
-  #define PIN_SERIAL_RX         PA1
-#endif
-#ifndef PIN_SERIAL_TX
-  #define PIN_SERIAL_TX         PA0
-#endif
 
 // Extra HAL modules
 #if !defined(HAL_DAC_MODULE_DISABLED)
   #define HAL_DAC_MODULE_ENABLED
 #endif
-#if !defined(HAL_QSPI_MODULE_DISABLED)
-  #define HAL_QSPI_MODULE_ENABLED
-#endif
-#if !defined(HAL_SD_MODULE_DISABLED)
-  #define HAL_SD_MODULE_ENABLED
-#endif
+
 
 /*----------------------------------------------------------------------------
  *        Arduino objects - C++ only
