@@ -1,0 +1,7 @@
+﻿  10cl_conf.c
+  binary_file_processing.c
+  virtual_com_port.c
+  Generating Code...
+  dllmain.cpp
+     Creating library C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSD_fpga_esp_tool\x64\Debug\10CL32.lib and object C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSD_fpga_esp_tool\x64\Debug\10CL32.exp
+  DSD_fpga_esp_tool.vcxproj -> C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\DSD_fpga_esp_tool\x64\Debug\10CL32.dll

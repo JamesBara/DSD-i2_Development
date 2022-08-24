@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>C:\Users\ΔΗΜΗΤΡΗΣ\AppData\Local\Arduino15\packages\esp32\tools\esptool_py\3.1.0/esptool.exe COM3 C:\Users\ΔΗΜΗΤΡΗΣ\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.2/tools/partitions/boot_app0.bin 0x0 C:\Users\ΔΗΜΗΤΡΗΣ\AppData\Local\Temp\arduino_build_251799/esp_blink.ino.bootloader.bin C:\Users\ΔΗΜΗΤΡΗΣ\AppData\Local\Temp\arduino_build_251799/esp_blink.ino.bin C:\Users\ΔΗΜΗΤΡΗΣ\AppData\Local\Temp\arduino_build_251799/esp_blink.ino.partitions.bin</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

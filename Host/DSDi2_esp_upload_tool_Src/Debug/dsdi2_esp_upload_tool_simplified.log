@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\dsdi2_esp_upload_tool_simplified\main.c(45,58): warning C4244: '=': conversion from 'ULONGLONG' to 'int', possible loss of data
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\dsdi2_esp_upload_tool_simplified\main.c(35,1): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
+  dsdi2_esp_upload_tool_simplified.vcxproj -> C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\dsdi2_esp_upload_tool_simplified\Debug\dsdi2_esp_upload_tool_simplified.exe

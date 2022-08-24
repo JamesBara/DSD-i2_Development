@@ -1,0 +1,7 @@
+﻿  binary_file_processing.c
+  main.c
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\dsdi2_stm_upload_tool_simplified\dsdi2_stm_upload_tool_simplified\main.c(44,58): warning C4244: '=': conversion from 'ULONGLONG' to 'int', possible loss of data
+C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\dsdi2_stm_upload_tool_simplified\dsdi2_stm_upload_tool_simplified\main.c(34,1): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'int', possible loss of data
+  virtual_com_port.c
+  Generating Code...
+  dsdi2_stm_upload_tool_simplified.vcxproj -> C:\Users\ΔΗΜΗΤΡΗΣ\source\repos\dsdi2_stm_upload_tool_simplified\Debug\dsdi2_stm_upload_tool_simplified.exe
