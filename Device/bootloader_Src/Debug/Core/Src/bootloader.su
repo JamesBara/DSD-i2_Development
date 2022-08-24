@@ -1,0 +1,12 @@
+../Core/Src/bootloader.c:57:13:reset	16	static
+../Core/Src/bootloader.c:82:9:bootloader_init	56	static
+../Core/Src/bootloader.c:108:6:command_handler	16	static
+../Core/Src/bootloader.c:143:6:jump_to_user_application	24	static,ignoring_inline_asm
+../Core/Src/bootloader.c:170:16:flash_stm_program	264	static
+../Core/Src/bootloader.c:294:9:usb_cmd_timeout	24	static
+../Core/Src/bootloader.c:318:9:send_reply	24	static
+../Core/Src/bootloader.c:334:17:calculate_crc	16	static
+../Core/Src/bootloader.c:345:6:HAL_UARTEx_RxEventCallback	16	static
+../Core/Src/bootloader.c:367:9:flash_esp_program	16	static
+../Core/Src/bootloader.c:399:16:conf_ps_fpga	72	dynamic
+../Core/Src/bootloader.c:487:16:fpga_usb_to_uart	16	static

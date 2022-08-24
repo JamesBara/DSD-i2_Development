@@ -1,0 +1,3 @@
+../Core/Src/cl10.c:37:9:flash_fpga_cmd	64	dynamic
+../Core/Src/cl10.c:126:6:fpga_usb_to_uart	16	static
+../Core/Src/cl10.c:155:6:reset_fpga	8	static

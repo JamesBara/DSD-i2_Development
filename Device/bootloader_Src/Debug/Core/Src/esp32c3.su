@@ -1,0 +1,2 @@
+../Core/Src/esp32c3.c:34:6:esp_init	8	static
+../Core/Src/esp32c3.c:51:6:esp_usb_to_uart	16	static
