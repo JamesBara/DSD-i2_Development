@@ -1,0 +1,6 @@
+../Core/Src/ring_buffer.c:38:15:ring_buffer_init	16	static
+../Core/Src/ring_buffer.c:58:17:ring_buffer_flush	0	static
+../Core/Src/ring_buffer.c:78:8:ring_buffer_available_bytes	0	static
+../Core/Src/ring_buffer.c:117:17:ring_buffer_write	16	static
+../Core/Src/ring_buffer.c:168:17:ring_buffer_read	20	static
+../Core/Src/ring_buffer.c:222:17:ring_buffer_deinit	16	static

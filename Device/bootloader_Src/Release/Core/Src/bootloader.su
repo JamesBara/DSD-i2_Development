@@ -1,0 +1,7 @@
+../Core/Src/bootloader.c:82:9:bootloader_init	64	static
+../Core/Src/bootloader.c:143:6:jump_to_user_application	16	static,ignoring_inline_asm
+../Core/Src/bootloader.c:294:9:usb_cmd_timeout	16	static
+../Core/Src/bootloader.c:318:9:send_reply	16	static
+../Core/Src/bootloader.c:57:13:reset	8	static
+../Core/Src/bootloader.c:108:6:command_handler	144	dynamic
+../Core/Src/bootloader.c:345:6:HAL_UARTEx_RxEventCallback	16	static
